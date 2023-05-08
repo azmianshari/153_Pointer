@@ -11,6 +11,15 @@ void mahasiswa::showNim() { //Implementasi method diluar class
 	cout << "No Induk = " << nim << endl;
 }
 
-int main() {
+int main() 
+{
+	mahasiswa mhs{ 1 };		//Object mhs
+	mhs.showNim();			//Member access operator
 
+	mahasiswa& ref = mhs;	//Pointer reference refmhs
+	ref.nim = 2;			//Member access operator
+	mhs.showNim();
+
+	mahasiswa* pMhs = &mhs;		//Pointer Dereference pMhs
+	pMhs
 }
